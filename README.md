@@ -9,8 +9,8 @@ Navigates and solves complex mazes using algorithmic strategies.
 This project is implemented using Python.
 
 ## Second Project
-### Music Recommendation System
-A smart engine that makes music recommendations by analyzing user preferences and behavior.
+### Movie Recommendation System
+A smart engine that makes movie recommendations by analyzing user preferences and behavior.
 This project is implemented using Prolog.
 
 ## Third Project
