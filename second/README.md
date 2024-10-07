@@ -4,7 +4,7 @@
 The goal of this project is to develop a Recommendation System for movies based on both the characteristics of the films and user ratings. We utilize a dataset containing movie metadata and user ratings to achieve this.
 
 ## Datasets
-- **[movies_metadata.csv](files/movie_metadata.csv)**: Contains movie features such as genre, director, actors, and keywords from IMDb.
+- **[movies_metadata.csv](files/movies_metadata.csv)**: Contains movie features such as genre, director, actors, and keywords from IMDb.
 - **ratings.csv**: Includes user ratings, split into **[training](files/train_ratings.csv)** and **[testing](files/test_ratings.csv)** datasets.
 
 ## Prolog Files we created
