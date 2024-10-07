@@ -4,12 +4,12 @@
 The goal of this project is to develop a Recommendation System for movies based on both the characteristics of the films and user ratings. We utilize a dataset containing movie metadata and user ratings to achieve this.
 
 ## Datasets
-- **[movies_metadata.csv](second/files/movie_metadata.csv)**: Contains movie features such as genre, director, actors, and keywords from IMDb.
-- **ratings.csv**: Includes user ratings, split into **[training](second/files/train_ratings.csv)** and **[testing](second/files/test_ratings.csv)** datasets.
+- **[movies_metadata.csv](files/movie_metadata.csv)**: Contains movie features such as genre, director, actors, and keywords from IMDb.
+- **ratings.csv**: Includes user ratings, split into **[training](files/train_ratings.csv)** and **[testing](files/test_ratings.csv)** datasets.
 
 ## Prolog Files we created
-- **[movie_metadata_rules.pl](second/files/find_similar.pl)**: This Prolog code defines a variety of predicates to compare different attributes between two movies, such as genre, director, plot keywords, actors, production details, and more. Each predicate looks for matches or similarities in these attributes between the two movies while ensuring that the movies are distinct.
-- **[ratings.csv](second/files/find_similar.pl)**: This Prolog file encapsulates rules for determining the similarity between two movies based on various factors, using the rules we created in the movie_metadata_rules.pl file.
+- **[movie_metadata_rules.pl](files/find_similar.pl)**: This Prolog code defines a variety of predicates to compare different attributes between two movies, such as genre, director, plot keywords, actors, production details, and more. Each predicate looks for matches or similarities in these attributes between the two movies while ensuring that the movies are distinct.
+- **[ratings.csv](files/find_similar.pl)**: This Prolog file encapsulates rules for determining the similarity between two movies based on various factors, using the rules we created in the movie_metadata_rules.pl file.
 
 ## Implementation Breakdown
 
