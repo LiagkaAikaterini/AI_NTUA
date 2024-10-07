@@ -1,0 +1,195 @@
+find_similar_1(Movie_1,Movie_2):-
+  one_common_genre(Movie_1,Movie_2);
+  common_decade(Movie_1,Movie_2);
+  one_same_plot(Movie_1,Movie_2).
+  
+find_similar_2(Movie_1,Movie_2):-
+  one_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2);
+  one_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2);
+  common_decade(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2).
+  
+find_similar_3(Movie_1,Movie_2):-
+  two_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2);
+  common_decade(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2).
+
+find_similar_4(Movie_1,Movie_2):-
+  two_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2);
+  one_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2).
+  
+find_similar_5(Movie_1,Movie_2):-
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2);
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2).
+  
+
+find_similar_6(Movie_1,Movie_2):-
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2);
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2).
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2).
+  
+
+find_similar_7(Movie_1,Movie_2):-
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2);
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2).
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2).
+
+  
+  
+find_similar_8(Movie_1,Movie_2):-
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2);
+  three_same_plot(Movie_1,Movie_2),
+  one_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  one_same_actor(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2).
+  
+  
+find_similar_9(Movie_1,Movie_2):-
+  three_same_plot(Movie_1,Movie_2),
+  two_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  some_same_actors(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  very_common_vote_average(Movie_1,Movie_2),
+  common_duration(Movie_1,Movie_2),
+  same_language(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2),
+  partly_common_popularity(Movie_1,Movie_2);
+  two_same_plot(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  some_same_actors(Movie_1,Movie_2),
+  two_common_genre(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2),
+  common_duration(Movie_1,Movie_2),
+  same_language(Movie_1,Movie_2),
+  partly_common_popularity(Movie_1,Movie_2),
+  partly_common_gross(Movie_1,Movie_2);  
+  three_same_plot(Movie_1,Movie_2),
+  two_common_genre(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  some_same_actors(Movie_1,Movie_2),
+  partly_common_budget(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  same_language(Movie_1,Movie_2),
+  partly_common_popularity(Movie_1,Movie_2),
+  partly_common_vote_average(Movie_1,Movie_2),
+  partly_common_gross(Movie_1,Movie_2).
+  
+  
+find_similar_10(Movie_1,Movie_2):-
+  four_same_plot(Movie_1,Movie_2),
+  two_common_genre(Movie_1,Movie_2),
+  one_common_spoken_language(Movie_1,Movie_2),
+  black_and_white(Movie_1,Movie_2),
+  common_director(Movie_1,Movie_2),
+  common_decade(Movie_1,Movie_2),
+  some_same_actors(Movie_1,Movie_2),
+  one_common_production_studio(Movie_1,Movie_2),
+  very_common_vote_average(Movie_1,Movie_2),
+  common_duration(Movie_1,Movie_2),
+  same_language(Movie_1,Movie_2),
+  very_common_budget(Movie_1,Movie_2),
+  very_common_popularity(Movie_1,Movie_2),
+  partly_common_gross(Movie_1,Movie_2),
+  two_common_production_country(Movie_1,Movie_2),
+  partly_common_num_voted(Movie_1,Movie_2).
