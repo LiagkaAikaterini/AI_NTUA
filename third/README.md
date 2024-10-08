@@ -17,7 +17,7 @@ The features for classification include:
 
 ## Part 1: Evaluation Functions
 We developed functions to evaluate classifiers, focusing on accuracy, defined as:
-Accuracy = (# correct predictions) / (# total samples)
+![accuracy formula](https://latex.codecogs.com/png.latex?\text{accuracy}%20=%20\frac{\text{correct%20predictions}}{\text{total%20samples}})
 
 ## Part 2: K-Nearest Neighbors (KNN)
 The implementation of the KNN algorithm for classification followed 3 steps:
