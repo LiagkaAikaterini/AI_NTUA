@@ -17,7 +17,7 @@ The features for classification include:
 
 ## Part 1: Evaluation Functions
 We developed functions to evaluate classifiers, focusing on accuracy, defined as:
-\[ \text{accuracy} = \frac{\text{# correct predictions}}{\text{# total samples}} \]
+ $$ \text{accuracy} = \frac{\text{# correct predictions}}{\text{# total samples}}  $$
 
 ## Part 2: K-Nearest Neighbors (KNN)
 The implementation of the KNN algorithm for classification followed 3 steps:
