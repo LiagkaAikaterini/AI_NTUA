@@ -13,7 +13,7 @@ The features for classification include:
 - Speechiness
 
 ## Dataset
-- **[third/music_df_processed.csv](music_df_processed.csv)** : this Spotify dataset contains many music tracks and various of their characteristics, some of which are listed above. We proceeded to manually split this dataset into a **train set** (70% of the data) and a **test set** (30% of the data).
+- **[music_df_processed.csv](music_df_processed.csv)** : this Spotify dataset contains many music tracks and various of their characteristics, some of which are listed above. We proceeded to manually split this dataset into a **train set** (70% of the data) and a **test set** (30% of the data).
 
 ## Part 1: Evaluation Functions
 We developed functions to evaluate classifiers, focusing on accuracy, defined as:
