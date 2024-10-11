@@ -1,7 +1,7 @@
 # Artificial Intelligence NTUA
 Developed as part of the NTUA course "Artificial Intelligence" in 2021-2022, these 3 projects explore the transformative potential of artificial intelligence and machine learning across various applications.
 
-It should be noted that the projects were carried out in Google Colab notebooks.
+It should be noted that the projects were carried out in Google Colab Notebooks. The paths that are set in the `.ipynb` files need to be updated accordingly for your local environment.
 
 ## First Project
 ### Mazes - Search Algorithms
